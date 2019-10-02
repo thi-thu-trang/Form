@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main22.StudentDetailController">
+   <children>
+      <Label layoutX="213.0" layoutY="14.0" prefHeight="61.0" prefWidth="146.0" text="StudentDetail">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="116.0" text="ID" />
+      <Label layoutX="69.0" layoutY="218.0" text="Name" />
+      <Label layoutX="390.0" layoutY="108.0" text="Email" />
+      <Label layoutX="390.0" layoutY="210.0" text="Age" />
+      <Label fx:id="idLabel" layoutX="129.0" layoutY="116.0" text="ID" />
+      <Label fx:id="nameLabel" layoutX="129.0" layoutY="218.0" text="Name" />
+      <Label fx:id="emailLabel" layoutX="455.0" layoutY="108.0" text="Email" />
+      <Label fx:id="ageLabel" layoutX="455.0" layoutY="210.0" text="Age" />
+   </children>
+</AnchorPane>

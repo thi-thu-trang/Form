@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main19.Controller">
+   <center>
+      <PieChart fx:id="pieChart" title="Language Rate" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="28.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="28.0" text="C#" />
+            <TextField fx:id="CSharpID" prefHeight="25.0" prefWidth="149.0" />
+            <Label prefHeight="17.0" prefWidth="28.0" text="Java" />
+            <TextField fx:id="JavaID" prefHeight="25.0" prefWidth="141.0" />
+            <Label prefHeight="17.0" prefWidth="41.0" text="Python" />
+            <TextField fx:id="PythonID" prefHeight="25.0" prefWidth="137.0" />
+            <Button mnemonicParsing="false" onAction="#Load" prefHeight="25.0" prefWidth="93.0" text="Load" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main16.Controller">
+   <children>
+      <ImageView fitHeight="158.0" fitWidth="200.0" layoutX="343.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Trang.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="159.0" layoutX="77.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Doraemon.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="383.0" layoutY="237.0" mnemonicParsing="false" text="Button">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="343.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/Trang.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="104.0" layoutY="240.0" mnemonicParsing="false" text="Button">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="77.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/Doraemon.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
