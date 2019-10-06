@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="276.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.form">
+   <children>
+      <Label fx:id="button" layoutX="42.0" layoutY="30.0" text="Welcome">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="87.0" prefHeight="27.0" prefWidth="90.0" text="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="138.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNText" layoutX="194.0" layoutY="88.0" promptText="username">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button layoutX="320.0" layoutY="198.0" mnemonicParsing="false" onAction="#signIn" text="Sign in">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Registere" layoutX="217.0" layoutY="201.0" mnemonicParsing="false" onAction="#registere" text="Registere" />
+      <PasswordField fx:id="passText" layoutX="194.0" layoutY="139.0" promptText="passwword">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

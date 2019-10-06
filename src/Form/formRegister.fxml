@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="315.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.Register">
+   <children>
+      <Label layoutX="115.0" layoutY="124.0" text="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="59.0" prefHeight="17.0" prefWidth="130.0" text="Registere">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="183.0" text="Password" />
+      <TextField fx:id="usernameTest" layoutX="211.0" layoutY="120.0" onAction="#add" />
+      <TextField fx:id="passwordTest" layoutX="211.0" layoutY="171.0" onAction="#add" />
+      <Button layoutX="100.0" layoutY="236.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="50.0" text="Back" />
+      <Button layoutX="323.0" layoutY="236.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="50.0" text="OK" />
+      <Button layoutX="211.0" layoutY="236.0" mnemonicParsing="false" onAction="#Information" text="Infor" />
+   </children>
+</AnchorPane>
