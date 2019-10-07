@@ -14,10 +14,10 @@ public class Account {
     public Account(String username, String password, Integer age, String email, Integer birth, String birthplace) {
         this.username = username;
         this.password = password;
-        Age = age;
-        Email = email;
-        Birth = birth;
-        Birthplace = birthplace;
+        this.Age = age;
+        this.Email = email;
+        this.Birth = birth;
+        this.Birthplace = birthplace;
     }
 
     public Account() {

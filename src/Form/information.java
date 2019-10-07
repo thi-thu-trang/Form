@@ -9,7 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -18,15 +18,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class information implements Initializable {
-    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
-    Label timeLabel = new Label(LocalTime.now().format(dtf));
+    protected ObservableList<Account> accountList;
     @FXML
-    private TableView<Account> table;
+    protected TableView<Account> table;
+    protected List<Account> accountList1 = Memory.getInstance().getAccounts();
+    //    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
+//    @FXML
+//    Pane timeLabel = new Pane(LocalTime.now().format(dtf));2
+    @FXML
+    private DatePicker datePicker;
     @FXML
     private TableColumn<Account, String> usernameColumn;
     @FXML
@@ -47,14 +53,17 @@ public class information implements Initializable {
     private TextField AgeText;
     @FXML
     private TextField EmailText;
-    //    @FXML
-//    private DatePicker dateofBirth;
+        @FXML
+    private DatePicker dateofBirth;
     @FXML
     private TextField BirthText;
     @FXML
     private TextField BirthplaceText;
 
-    private ObservableList<Account> accountList;
+    public void setonAction(ActionEvent event) {
+        LocalDate date = datePicker.getValue();
+        System.out.println("Selected date: " + date);
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -68,6 +77,8 @@ public class information implements Initializable {
         BirthColumn.setCellValueFactory(new PropertyValueFactory<Account, Integer>("Birth"));
         BirthplaceColumn.setCellValueFactory(new PropertyValueFactory<Account, String>(" Birthplace"));
         table.setItems(accountList);
+
+
     }
 
     public void del(ActionEvent e) {
@@ -84,16 +95,17 @@ public class information implements Initializable {
         newAccount.setBirthplace(BirthplaceText.getText());
         newAccount.setAge(Integer.parseInt(AgeText.getText()));
         accountList.add(newAccount);
+        accountList1.addAll(accountList);
     }
 
-//    @FXML
-//    private void showAge(){
-//        Calendar now = Calendar.getInstance();
-//        int year = now.get(Calendar.YEAR);
-//        int birthYear = (dateofBirth.getValue().getYear());
-//        int age = year - birthYear;
-//        AgeText.setText(Integer.toString(age)+"years");
-//    }
+    @FXML
+    private void showAge() {
+        Calendar now = Calendar.getInstance();
+        int year = now.get(Calendar.YEAR);
+        int birthYear = (datePicker.getValue().getYear());
+        int age = year - birthYear;
+        AgeText.setText(Integer.toString(age) + "years");
+    }
 
     public void goBack(ActionEvent e) throws IOException {
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
@@ -103,4 +115,6 @@ public class information implements Initializable {
         Scene scene = new Scene(sampleParent);
         stage.setScene(scene);
     }
+
+
 }

@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="593.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.information">
    <children>
       <TableView fx:id="table" layoutX="156.0" prefHeight="343.0" prefWidth="626.0">
@@ -34,12 +33,13 @@
             <Label layoutX="302.0" layoutY="146.0" text="Birthplace" />
             <TextField fx:id="usernameText" layoutX="84.0" layoutY="28.0" prefHeight="25.0" prefWidth="190.0" />
             <TextField fx:id="passwordText" layoutX="84.0" layoutY="88.0" prefHeight="25.0" prefWidth="190.0" />
-            <TextField fx:id="AgeText" layoutX="84.0" layoutY="142.0" prefHeight="25.0" prefWidth="190.0" />
+            <TextField fx:id="AgeText" layoutX="84.0" layoutY="142.0" onAction="#showAge" prefHeight="25.0" prefWidth="190.0" />
             <TextField fx:id="EmailText" layoutX="375.0" layoutY="28.0" prefHeight="25.0" prefWidth="190.0" />
             <TextField fx:id="BirthplaceText" layoutX="375.0" layoutY="142.0" prefHeight="25.0" prefWidth="190.0" />
-            <TextField fx:id="BirthText" layoutX="375.0" layoutY="88.0" prefHeight="25.0" prefWidth="190.0" />
+            <DatePicker fx:id="dateofBirth" layoutX="375.0" layoutY="88.0" prefHeight="25.0" prefWidth="190.0" />
          </children>
       </Pane>
-      <Label fx:id="timeLabel" prefHeight="129.0" prefWidth="158.0" />
+      <DatePicker fx:id="datePicker" layoutY="2.0" onAction="#setonAction" prefHeight="25.0" prefWidth="156.0" />
+      <DatePicker layoutY="27.0" prefHeight="25.0" prefWidth="156.0" />
    </children>
 </AnchorPane>

@@ -1,5 +1,6 @@
 package Form;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,39 +20,31 @@ public class Register {
     protected TextField passwordTest;
     @FXML
     protected TextField usernameTest;
+    @FXML
+    private TextField AgeText;
+    @FXML
+    private TextField EmailText;
+    @FXML
+    private TextField BirthText;
+    @FXML
+    private TextField BirthplaceText;
     protected List<Account> accountList = Memory.getInstance().getAccounts();
     @FXML
     private Label username;
     @FXML
     private Label password;
+
+
     public void add(ActionEvent e) {
         Account account = new Account();
         account.setUsername(usernameTest.getText());
         account.setPassword(passwordTest.getText());
+        account.setAge(Integer.parseInt(AgeText.getText()));
+        account.setBirth(Integer.parseInt(BirthText.getText()));
+        account.setEmail(EmailText.getText());
+        account.setBirthplace(BirthplaceText.getText());
         accountList.add(account);
-//        if(account.setUsername(String.valueOf(username.getText()== null))){
-//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//            alert.setTitle("Register ");
-//            alert.setHeaderText("Register Fail ");
-//            alert.showAndWait();
-//        }
-//        else {
-//            for (Account account1 :accountList){
-//               if (account1.getUsername().equals(account.getUsername())){
-//                   Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//                   alert.setTitle("Register ");
-//                   alert.setHeaderText("Register Fail");
-//                   alert.showAndWait();
-//               }
-//               else {
-//                   accountList.add(account);
-//                   Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//                   alert.setTitle("Register ");
-//                   alert.setHeaderText("Register Success");
-//                   alert.showAndWait();
-//               }
-//            }
-//        }
+       // table.setItems((ObservableList<Account>) accountList);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Register");
@@ -79,3 +72,27 @@ public class Register {
         stage.setScene(scene2);
     }
 }
+
+//        if(account.setUsername(String.valueOf(username.getText()== null))){
+//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            alert.setTitle("Register ");
+//            alert.setHeaderText("Register Fail ");
+//            alert.showAndWait();
+//        }
+//        else {
+//            for (Account account1 :accountList){
+//               if (account1.getUsername().equals(account.getUsername())){
+//                   Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                   alert.setTitle("Register ");
+//                   alert.setHeaderText("Register Fail");
+//                   alert.showAndWait();
+//               }
+//               else {
+//                   accountList.add(account);
+//                   Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                   alert.setTitle("Register ");
+//                   alert.setHeaderText("Register Success");
+//                   alert.showAndWait();
+//               }
+//            }
+//        }

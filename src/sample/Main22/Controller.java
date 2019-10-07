@@ -68,7 +68,7 @@ public class Controller implements Initializable {
         newStudent.setEmail(emailText.getText());
         newStudent.setAge(Integer.parseInt(ageText.getText()));
         studentList.add(newStudent);
-    }
+}
 
     public void del(ActionEvent e) {
         Student selected = table.getSelectionModel().getSelectedItem();
