@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="276.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.form">
+<AnchorPane prefHeight="276.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLi.ControllerAccount">
    <children>
       <Label fx:id="button" layoutX="42.0" layoutY="30.0" text="Welcome">
          <font>
@@ -24,7 +24,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="userNText" layoutX="194.0" layoutY="88.0" promptText="username">
+      <TextField fx:id="nameText" layoutX="194.0" layoutY="88.0" promptText="username">
          <font>
             <Font size="13.0" />
          </font></TextField>

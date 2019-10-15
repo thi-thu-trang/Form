@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="593.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLi.LogIn">
+    <children>
+      <Button layoutX="24.0" layoutY="167.0" mnemonicParsing="false" onAction="#QuanLiSV" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Sinh Viên" />
+      <Button layoutX="25.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Giáo Viên" />
+      <Button layoutX="24.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Điểm" />
+      <Button layoutX="24.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Khoa" />
+      <Button layoutX="25.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Lớp" />
+      <TextField alignment="TOP_CENTER" layoutX="224.0" layoutY="40.0" prefHeight="150.0" prefWidth="557.0" promptText="Quản Lí">
+         <font>
+            <Font name="System Bold Italic" size="71.0" />
+         </font>
+      </TextField>
+      <Button layoutX="26.0" layoutY="429.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Quản Lí Môn" />
+      <Label fx:id="DateTime" alignment="TOP_CENTER" layoutX="21.0" layoutY="32.0" prefHeight="87.0" prefWidth="179.0" AnchorPane.bottomAnchor="474.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label alignment="TOP_CENTER" layoutX="23.0" prefHeight="31.0" prefWidth="173.0" text="Xin Chào Giáo Vụ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

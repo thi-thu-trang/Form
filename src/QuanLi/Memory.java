@@ -1,4 +1,5 @@
-package Form;
+package QuanLi;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +7,9 @@ import java.util.List;
 public class Memory {
     private static Memory instance;
 
-    private List<Account> accounts;
+    private List<AccountSV> accounts;
 
-    public List<Account> getAccounts() {
+    public List<AccountSV> getAccounts() {
         return accounts;
     }
 

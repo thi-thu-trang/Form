@@ -1,26 +1,26 @@
-package Form;
+package QuanLi;
 
-import javafx.fxml.Initializable;
-
-public class Account {
+public class AccountSV {
     private String username;
     private String password;
     private Integer Age;
     private String Email;
     private Integer Birth;
     private String Birthplace;
+//    private CheckBox checkBox;
 
 
-    public Account(String username, String password, Integer age, String email, Integer birth, String birthplace) {
-        this.username = username;
-        this.password = password;
-        this.Age = age;
-        this.Email = email;
-        this.Birth = birth;
-        this.Birthplace = birthplace;
+    public AccountSV() {
     }
 
-    public Account() {
+    public AccountSV(String username, String password, Integer age, String email, Integer birth, String birthplace) {
+        this.username = username;
+        this.password = password;
+        Age = age;
+        Email = email;
+        Birth = birth;
+        Birthplace = birthplace;
+        //  this.checkBox = checkBox;
     }
 
     public String getUsername() {
@@ -29,7 +29,6 @@ public class Account {
 
     public void setUsername(String username) {
         this.username = username;
-
     }
 
     public String getPassword() {
@@ -45,7 +44,7 @@ public class Account {
     }
 
     public void setAge(Integer age) {
-       this.Age = age;
+        Age = age;
     }
 
     public String getEmail() {
@@ -53,7 +52,7 @@ public class Account {
     }
 
     public void setEmail(String email) {
-        this.Email = email;
+        Email = email;
     }
 
     public Integer getBirth() {
@@ -61,7 +60,7 @@ public class Account {
     }
 
     public void setBirth(Integer birth) {
-        this.Birth = birth;
+        Birth = birth;
     }
 
     public String getBirthplace() {
@@ -69,8 +68,14 @@ public class Account {
     }
 
     public void setBirthplace(String birthplace) {
-        this.Birthplace = birthplace;
+        Birthplace = birthplace;
     }
 
-
+//    public CheckBox getCheckBox() {
+//        return checkBox;
+//    }
+//
+//    public void setCheckBox(CheckBox checkBox) {
+//        this.checkBox = checkBox;
+//    }
 }
